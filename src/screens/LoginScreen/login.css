@@ -37,48 +37,52 @@
   width: 40px;
   height: 40px;
   animation-name: touchfloat;
-  animation-duration: 10s;
+  animation-duration: 80s;
   animation-timing-function: linear;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   left: 30px;
   top: 5px;
+  z-index: 0;
 }
 
 .facefloat {
   width: 40px;
   height: 40px;
   animation-name: facefloat;
-  animation-duration: 10s;
+  animation-duration: 80s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   left: 30px;
   top: 5px;
+  z-index: 0;
 }
 
 .pxfloat {
   width: 40px;
   height: 40px;
   animation-name: pxfloat;
-  animation-duration: 10s;
+  animation-duration: 80s;
   animation-timing-function: linear;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   left: 30px;
   top: 5px;
+  z-index: 0;
 }
 
 .doctorfloat {
   width: 40px;
   height: 40px;
   animation-name: doctorfloat;
-  animation-duration: 10s;
+  animation-duration: 80s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   left: 30px;
   top: 5px;
+  z-index: 0;
 }
 
 @keyframes facefloat {
@@ -140,53 +144,53 @@
   0% {
     top: 45%;
     left: 1%;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
   }
   25% {
     top: 92%;
     left: 55%;
-    transform: rotate(135deg);
+    transform: rotate(80deg);
   }
   50% {
     top: 55%;
     left: 95%;
-    transform: rotate(225deg);
+    transform: rotate(0deg);
   }
   75% {
     top: 1%;
     left: 45%;
-    transform: rotate(315deg);
+    transform: rotate(80deg);
   }
   100% {
     top: 46%;
     left: 1%;
-    transform: rotate(405deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes pxfloat {
   0% {
     top: 92%;
     left: 45%;
-    transform: rotate(45deg);
+    transform: rotate(80deg);
   }
   25% {
     top: 55%;
     left: 95%;
-    transform: rotate(135deg);
+    transform: rotate(0deg);
   }
   50% {
     top: 1%;
     left: 45%;
-    transform: rotate(225deg);
+    transform: rotate(80deg);
   }
   75% {
     top: 45%;
     left: 1%;
-    transform: rotate(315deg);
+    transform: rotate(0deg);
   }
   100% {
     top: 92%;
     left: 45%;
-    transform: rotate(405deg);
+    transform: rotate(80deg);
   }
 }

@@ -33,7 +33,7 @@ const LoginScreen = () => {
       <img src={px} alt="" className="pxfloat absolute" />
       <img src={doctor} alt="" className="doctorfloat absolute" />
 
-      <div className="flex flex-col justify-center mt-20">
+      <div className="flex flex-col justify-center mt-20 z-50">
         <img src={logo} alt="S.O.S" className="w-64 logo" />
         <div className="typing-demo mt-2">Scan . Obtain . Save</div>
       </div>
