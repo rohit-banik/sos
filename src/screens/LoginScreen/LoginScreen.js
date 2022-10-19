@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "./login.css";
 import logo from "../../assets/master-logo.png";
 import graphics from "../../assets/graphics.png";
+import touchid from "../../assets/touchid.png";
+import faceid from "../../assets/faceid.png";
+import px from "../../assets/px.png";
+import doctor from "../../assets/doctor.png";
 import { Button } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { MdEmail, MdOutlinePassword } from "react-icons/md";
@@ -24,6 +28,10 @@ const LoginScreen = () => {
         alt=""
         className="absolute flex m-0 w-screen h-screen object-cover"
       />
+      <img src={touchid} alt="" className="touchfloat absolute" />
+      <img src={faceid} alt="" className="facefloat absolute" />
+      <img src={px} alt="" className="pxfloat absolute" />
+      <img src={doctor} alt="" className="doctorfloat absolute" />
 
       <div className="flex flex-col justify-center mt-20">
         <img src={logo} alt="S.O.S" className="w-64 logo" />

@@ -32,3 +32,161 @@
     border-color: transparent;
   }
 }
+
+.touchfloat {
+  width: 40px;
+  height: 40px;
+  animation-name: touchfloat;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  left: 30px;
+  top: 5px;
+}
+
+.facefloat {
+  width: 40px;
+  height: 40px;
+  animation-name: facefloat;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  left: 30px;
+  top: 5px;
+}
+
+.pxfloat {
+  width: 40px;
+  height: 40px;
+  animation-name: pxfloat;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  left: 30px;
+  top: 5px;
+}
+
+.doctorfloat {
+  width: 40px;
+  height: 40px;
+  animation-name: doctorfloat;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  left: 30px;
+  top: 5px;
+}
+
+@keyframes facefloat {
+  0% {
+    top: 55%;
+    left: 95%;
+    transform: rotate(45deg);
+  }
+  25% {
+    top: 1%;
+    left: 45%;
+    transform: rotate(135deg);
+  }
+  50% {
+    top: 45%;
+    left: 1%;
+    transform: rotate(225deg);
+  }
+  75% {
+    top: 92%;
+    left: 55%;
+    transform: rotate(315deg);
+  }
+  100% {
+    top: 55%;
+    left: 95%;
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes touchfloat {
+  0% {
+    top: 1%;
+    left: 45%;
+    transform: rotate(45deg);
+  }
+  25% {
+    top: 45%;
+    left: 1%;
+    transform: rotate(135deg);
+  }
+  50% {
+    top: 92%;
+    left: 55%;
+    transform: rotate(225deg);
+  }
+  75% {
+    top: 55%;
+    left: 95%;
+    transform: rotate(315deg);
+  }
+  100% {
+    top: 1%;
+    left: 45%;
+    transform: rotate(405deg);
+  }
+}
+@keyframes doctorfloat {
+  0% {
+    top: 45%;
+    left: 1%;
+    transform: rotate(45deg);
+  }
+  25% {
+    top: 92%;
+    left: 55%;
+    transform: rotate(135deg);
+  }
+  50% {
+    top: 55%;
+    left: 95%;
+    transform: rotate(225deg);
+  }
+  75% {
+    top: 1%;
+    left: 45%;
+    transform: rotate(315deg);
+  }
+  100% {
+    top: 46%;
+    left: 1%;
+    transform: rotate(405deg);
+  }
+}
+@keyframes pxfloat {
+  0% {
+    top: 92%;
+    left: 45%;
+    transform: rotate(45deg);
+  }
+  25% {
+    top: 55%;
+    left: 95%;
+    transform: rotate(135deg);
+  }
+  50% {
+    top: 1%;
+    left: 45%;
+    transform: rotate(225deg);
+  }
+  75% {
+    top: 45%;
+    left: 1%;
+    transform: rotate(315deg);
+  }
+  100% {
+    top: 92%;
+    left: 45%;
+    transform: rotate(405deg);
+  }
+}
