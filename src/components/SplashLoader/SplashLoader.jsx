@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import loader from "../../assets/loading.mp4";
 import loadersmall from "../../assets/loading-small.mp4";
 const SplashLoader = () => {
