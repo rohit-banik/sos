@@ -48,6 +48,7 @@ const DashboardScreen = () => {
         </div>
 
         <div className="flex flex-row text-center justify-around text-slate-900 dark:text-slate-300 z-50 bg-opacity-50 p-5 rounded-xl w-full h-full bg-slate-800">
+          <div>Hello again</div>
           <div className="text-4xl">Hello</div>
         </div>
       </div>
