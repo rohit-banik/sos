@@ -1,0 +1,36 @@
+.typing-logo {
+  width: 16ch;
+  animation: typing 3s steps(15) infinite alternate,
+    blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  color: azure;
+  font-family: "Righteous";
+  font-size: 13px;
+}
+
+.font-righteous {
+  font-family: "Righteous";
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 0;
+  }
+  60% {
+    width: 15ch;
+  }
+  100% {
+    width: 15ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
