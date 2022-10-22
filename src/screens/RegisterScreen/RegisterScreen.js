@@ -8,12 +8,12 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 import "../RegisterScreen/register.css";
-import logo from "../../assets/master-logo.png";
-import graphics from "../../assets/graphics.png";
-import touchid from "../../assets/touchid.png";
-import faceid from "../../assets/faceid.png";
-import px from "../../assets/px.png";
-import doctor from "../../assets/doctor.png";
+import logo from "../../assets/images/master-logo.png";
+import graphics from "../../assets/images/graphics.png";
+import touchid from "../../assets/images/touchid.png";
+import faceid from "../../assets/images/faceid.png";
+import px from "../../assets/images/px.png";
+import doctor from "../../assets/images/doctor.png";
 
 // import { DatePickerComponent } from "../../components";
 import { Button } from "@mui/material";
@@ -27,14 +27,19 @@ import { RiEyeFill, RiEyeCloseFill } from "react-icons/ri";
 
 const theme = createTheme({
   palette: {
-    success: {
-      main: "#00e676",
-    },
     mode: "dark",
   },
   typography: {
     fontFamily: ["Fresca"],
     fontSize: "11",
+  },
+});
+
+const buttonTheme = createTheme({
+  palette: {
+    success: {
+      main: "#00e676",
+    },
   },
 });
 
@@ -49,13 +54,9 @@ const RegisterScreen = () => {
       <img
         src={graphics}
         alt=""
-        className="absolute flex m-0 w-screen h-screen object-cover"
+        className="absolute flex m-0 w-screen h-screen"
       />
-      <img
-        src={graphics}
-        alt=""
-        className="absolute flex m-0 w-screen h-screen object-cover"
-      />
+
       <img src={touchid} alt="" className="touchfloat absolute" />
       <img src={faceid} alt="" className="facefloat absolute" />
       <img src={px} alt="" className="pxfloat absolute" />
@@ -66,14 +67,12 @@ const RegisterScreen = () => {
         <div className="typing-demo mt-2">Scan . Obtain . Save</div>
       </div>
       <div className="mt-10 z-50 rounded-md">
-        <h1 className="text-slate-100 text-5xl">
+        <h1 className="text-slate-100 text-5xl px-2 pb-2 border-b border-slate-700">
           Welcome to S.O.S,{" "}
-          <span className="text-rose-500 uppercase font-semibold">
-            Champion
-          </span>
+          <span className="text-rose-500 uppercase font-semibold">Champ</span>
         </h1>
 
-        <div className="text-slate-300 text-3xl border-t border-slate-700 px-10 py-8 my-2 rounded-sm">
+        <div className="text-slate-300 text-3xl px-5 py-8 mb-2">
           <div>Register your Health</div>
 
           <div>
@@ -312,7 +311,7 @@ const RegisterScreen = () => {
           </div>
 
           {/* Redirect Link */}
-          <div className="relative text-xl mb-5">
+          <div className="relative text-xl mb-3">
             Already joined us?{" "}
             <Link to={"/login"} className="text-rose-500 uppercase">
               Login
@@ -322,7 +321,7 @@ const RegisterScreen = () => {
 
           {/* Button */}
           <div className="text-right">
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={buttonTheme}>
               <Button
                 variant="contained"
                 startIcon={<AiOutlineLogin />}

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import loader from "../../assets/loading.mp4";
-import loadersmall from "../../assets/loading-small.mp4";
+import loader from "../../assets/videos/loading.mp4";
+import loadersmall from "../../assets/videos/loading-small.mp4";
 const SplashLoader = () => {
   const videoEl = useRef(null);
 

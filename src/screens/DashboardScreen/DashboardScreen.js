@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../../assets/master-logo.png";
 import "./dashboard.css";
-import graphics from "../../assets/graphics.png";
-import touchid from "../../assets/touchid.png";
-import faceid from "../../assets/faceid.png";
-import px from "../../assets/px.png";
-import doctor from "../../assets/doctor.png";
-import manlogo from "../../assets/man-icon.png";
+import logo from "../../assets/images/master-logo.png";
+import graphics from "../../assets/images/graphics.png";
+import touchid from "../../assets/images/touchid.png";
+import faceid from "../../assets/images/faceid.png";
+import px from "../../assets/images/px.png";
+import doctor from "../../assets/images/doctor.png";
+import manlogo from "../../assets/images/man-icon.png";
 
 const DashboardScreen = () => {
   return (
@@ -47,9 +47,18 @@ const DashboardScreen = () => {
           </div>
         </div>
 
-        <div className="flex flex-row text-center justify-around text-slate-900 dark:text-slate-300 z-50 bg-opacity-50 p-5 rounded-xl w-full h-full bg-slate-800">
-          <div>Hello again</div>
-          <div className="text-4xl">Hello</div>
+        <div className="flex flex-row text-center justify-around z-50 gap-x-5 bg-opacity-50 w-full h-full">
+          <div className="flex flex-col gap-y-5 text-slate-900 dark:text-slate-300 w-fit p-5 bg-slate-800 rounded-xl">
+            <img
+              src={manlogo}
+              alt=""
+              className="w-40 bg-slate-400 rounded-full p-1"
+            />
+            <div className="text-3xl">Ritwik Satpati</div>
+          </div>
+          <div className="flex text-slate-900 dark:text-slate-300 p-5 bg-slate-800 w-full rounded-xl">
+            Hello
+          </div>
         </div>
       </div>
     </div>

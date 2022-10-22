@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./login.css";
-import logo from "../../assets/master-logo.png";
-import graphics from "../../assets/graphics.png";
-import touchid from "../../assets/touchid.png";
-import faceid from "../../assets/faceid.png";
-import px from "../../assets/px.png";
-import doctor from "../../assets/doctor.png";
+import logo from "../../assets/images/master-logo.png";
+import graphics from "../../assets/images/graphics.png";
+import touchid from "../../assets/images/touchid.png";
+import faceid from "../../assets/images/faceid.png";
+import px from "../../assets/images/px.png";
+import doctor from "../../assets/images/doctor.png";
 import { Button } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { MdEmail, MdOutlinePassword } from "react-icons/md";
 import { AiOutlineLogin } from "react-icons/ai";
+import { RiEyeFill, RiEyeCloseFill } from "react-icons/ri";
 
 const theme = createTheme({
   palette: {
@@ -21,6 +22,8 @@ const theme = createTheme({
 });
 
 const LoginScreen = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <div className="bg-gray-900 flex w-screen h-screen flex-col items-center">
       <img
@@ -38,14 +41,12 @@ const LoginScreen = () => {
         <div className="typing-demo mt-2">Scan . Obtain . Save</div>
       </div>
       <div className="mt-10">
-        <h1 className="text-slate-100 text-5xl">
+        <h1 className="text-slate-100 text-5xl border-b pb-2 px-5 border-slate-700">
           Welcome back,{" "}
-          <span className="text-rose-500 uppercase font-semibold">
-            Champion
-          </span>
+          <span className="text-rose-500 uppercase font-semibold">Champ</span>
         </h1>
 
-        <div className="text-slate-300 text-3xl border-t border-slate-700 px-10 py-8 my-2 rounded-sm">
+        <div className="text-slate-300 text-3xl px-5 py-5">
           <div>Login to your Health</div>
 
           <div>
@@ -77,11 +78,20 @@ const LoginScreen = () => {
                 <MdOutlinePassword className="w-5 h-5 text-gray-500 dark:text-gray-400" />
               </div>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 id="input-group-2"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 outline-none focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="*************"
+                placeholder={
+                  showPassword ? "Shhh! Wasn't it secret" : "*************"
+                }
               />
+              <label
+                onClick={() => setShowPassword(!showPassword)}
+                class="absolute right-1.5 top-1.5 p-1.5 hover:text-emerald-300 rounded-full hover:bg-slate-600 text-xl text-rose-300 cursor-pointer"
+                for="toggle"
+              >
+                {showPassword ? <RiEyeFill /> : <RiEyeCloseFill />}
+              </label>
             </div>
           </div>
           <div className="relative text-xl mb-5">
