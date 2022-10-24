@@ -31,7 +31,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: ["Fresca"],
-    fontSize: "11",
+    fontSize: 11,
   },
 });
 
